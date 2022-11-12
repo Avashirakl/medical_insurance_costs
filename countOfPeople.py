@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-df = pd.read_csv('C:/Users/User/Desktop/DataAnalyz/medical_insurance_costs-main/insurance.csv')
+df = pd.read_csv('insurance.csv')
 
 gender = df['sex']
 children = df['children']
