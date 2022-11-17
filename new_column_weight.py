@@ -10,4 +10,8 @@ df['weight'] = df.apply(  # .apply() method used to compute some values over an 
                 else ('Obese' if 30 <= row.bmi < 35
                       else ('Extremely Obese' if row.bmi >= 35 else '')))), axis=1)
 
+
+df = df.groupby(['weight'])['age'].agg(['count'])
+
 print(df)  # Printing updated DataFrame
+
